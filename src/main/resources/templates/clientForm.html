@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Create Admin</title>
+</head>
+<body>
+    <div class="c-add-content_wrapper w-form">
+        <form action="/newClient" method="post" onsubmit="return confirm('Deseja Enviar?')">
+          <div class="div-block-50">
+            <a href="#" class="picture-new-cliente w-inline-block">
+              <div class="text-block-87">1</div>
+              <div class="text-block-88">Adicionar Imagem</div>
+            </a>
+          </div><label for="name" class="field-label-2">Nome</label><input type="text" class="text-field-2 w-input" name="name" placeholder="Nome completo" id="name"><label for="name" class="field-label-2">Email</label><input type="text" class="text-field-2 w-input" name="email" placeholder="Digite o email" id="name-3"><label for="name-2" class="field-label-2">Genero</label><select id="genero" name="genero"  class="select-field w-select">
+            <option value="">Escolha um genero</option>
+            <option value="First">Masculino</option>
+            <option value="Second">Feminino</option>
+          </select><label for="email">Data de Nascimento DD/MM/ANO</label><input type="date" class="text-field-2 w-input" name="dataNascimento" id="dataNascimento" required=""><label for="name-2" class="field-label-2">Telemovel</label><input type="text" class="text-field-2 w-input" name="telemovel"  placeholder="Telemovel" id="telefone"><label for="name-2" class="field-label-2">Provincia</label><select id="provincia" name="provincia" data-name="field" class="text-field-2 w-select">
+            <option value="">Escolha uma...</option>
+            <option value="Another Choice">Luanda</option>
+            <option value="Another Choice">Benguela</option>
+            <option value="Another Choice">Huambo</option>
+            <option value="Another Choice">Huila</option>
+            <option value="Another Choice">Soyo</option>
+          </select><label for="name-4" class="field-label-2">Morada</label><input type="text" class="text-field-2 w-input" name="morada" placeholder="Morada" id="morada">
+          <div class="w-clearfix">
+            
+            </select></div><label for="name-3" class="field-label-2">Palavra Passe</label><input type="text" class="text-field-2 w-input" name="palavraPasse" id="palavraPasse" placeholder="Senha">
+          <div class="div-block-48 w-clearfix">
+            <button type="submit">Criar</button>
+          </div>
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+
+
+
+</body>
+</html>

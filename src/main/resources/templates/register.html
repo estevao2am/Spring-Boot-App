@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Add User</title>
+</head>
+<body>
+    
+    	<div class = "container">
+    	<div th:if="${param.success}">
+			<div class="alert alert-info">
+				Cadastro Feito Com Sucesso !
+			</div>
+		</div>
+    		<h2>Create User</h2>
+    		<hr/>
+    		
+    			<form th:action = "@{/registration}" method="post" th:object="${user}" >
+    				<input type="text"  placeholder="Digite o Primeiro Nome"name="firstName" class="form-control col-4 mb-4"/>
+    				<input type="text"  placeholder="Digite o Sobre Nome" name="lastName" class="form-control col-4 mb-4"/>
+					<input type="email"  placeholder="Digite o email" name="email" class="form-control col-4 mb-4"/>
+
+    				<input type="password"  placeholder="Digite  a Senha" name="password" class="form-control col-4 mb-4"/>
+
+    				<button class = "btn btn-primary" type="submit">Save</button>
+    			</form>
+    			<hr/>
+    			<a href="#" class="btn btn-primary">LOGIN</a>
+    	</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title></title>
+</head>
+<body>
+  
+<div class="c-nav">
+  <h2>Hi <span th:utext="${userName}"></span>, this is the home page.</h2>
+  <a th:href="@{/logout}">Sign out</a>
+    <div class="c-nav_brand_parent">
+      <a href="/" aria-current="page" class="c-nav_brand w-inline-block w--current"></a>
+    </div>
+    <div class="c-menu">
+      <a href="/" aria-current="page" class="c-menu_navlink w-inline-block w-clearfix w--current">
+        <div class="c-navlink_icon">e</div>
+        <div class="c-navlink_text">Inicio</div>
+      </a>
+      <a href="/clientes" class="c-menu_navlink w-inline-block w-clearfix">
+        <div class="c-navlink_icon">d</div>
+        <div class="c-navlink_text">Clientes</div>
+      </a>
+      <a href="/categoria" class="c-menu_navlink w-inline-block w-clearfix">
+        <div class="c-navlink_icon">2</div>
+        <div class="c-navlink_text">Prestadores</div>
+      </a>
+      <a href="mensagens/mensagens.html" class="c-menu_navlink w-inline-block w-clearfix">
+        <div class="c-navlink_icon">f</div>
+        <div class="c-navlink_text">Mensagens</div>
+      </a>
+      <a href="relatorio/pagina-relatorios-gerais.html" class="c-menu_navlink w-inline-block w-clearfix">
+        <div class="c-navlink_icon">y</div>
+        <div class="c-navlink_text">Relatórios</div>
+      </a>
+    </div>
+    <div class="c-logout_parent">
+      <a href="#" class="c-logout_link w-inline-block">
+        <div class="c-logout_icon">8</div>
+        <div class="c-logout-text">Logout</div>
+      </a>
+    </div>
+  </div>
+
+
+</body>
+</html>
